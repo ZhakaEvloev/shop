@@ -1,4 +1,5 @@
 .header-up {
+  margin-top: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,6 +19,11 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 23px;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom-color: #000;
+    }
   }
 
   &__icon {
@@ -26,6 +32,16 @@
 
     &:last-of-type {
       margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-up {
+    margin-top: 5px;
+
+    &__nav {
+      display: none;
     }
   }
 }

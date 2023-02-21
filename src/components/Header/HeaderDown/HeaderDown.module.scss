@@ -1,7 +1,40 @@
 .header-down {
   margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #F0F0F4;
+  
+  &__wrap {
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F0F0F4;
+  }
+
+  &__wrapper {
+    padding: 14px 0;
+    border-bottom: 3px solid transparent;
+
+    &:hover, &--active {
+      border-bottom-color: #1C62CD;
+    }
+  }
+
+  &__link {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-down {
+    margin-top: 10px;
+    
+    &__wrap {
+      overflow-x: auto;
+    }
+  
+    &__link {
+      font-weight: 600;
+      margin-right: 25px;
+    }
+  }
 }
