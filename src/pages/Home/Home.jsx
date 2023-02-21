@@ -1,9 +1,12 @@
+import Layout from "../../Layout/Layout";
 import pages from "./Home.module.scss";
 
 export default function Home() {
   return (
-    <div className={pages.home}>
+    <Layout>
+      <div className={pages.home}>
 
-    </div>
+      </div>
+    </Layout>
   );
 };

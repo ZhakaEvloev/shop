@@ -1,0 +1,31 @@
+.header-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav, &__icons {
+    display: flex;
+  }
+
+  &__link {
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+  }
+
+  &__icon {
+    cursor: pointer;
+    margin-right: 10px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
