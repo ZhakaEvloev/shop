@@ -1,0 +1,21 @@
+button {
+  font-size: 18px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn_primary {
+  button {
+    color: #FFF;
+    transition: .5s;
+    background: #8400ff;
+    background-image: linear-gradient(to right, #8400ff 0%, #ff00e8 51%, #8400ff 100%);
+    background-size: 200% auto;
+    transition: 0.6s;
+  }
+}
+
+.btn_primary button:hover {
+  background-position: right;
+}

@@ -1,6 +1,6 @@
 import Container from "./Container/Container";
-import DesktopContainer from "./DesktopContainer/DesktopContainer"
+import Button from "./Button/Button";
 
 export {
-  Container, DesktopContainer, 
+  Container, Button, 
 }

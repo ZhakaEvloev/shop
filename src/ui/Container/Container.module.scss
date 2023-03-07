@@ -1,11 +1,11 @@
 .container {
-  max-width: 1170px;
+  max-width: 1260px;
   width: 100%;
   margin: 0 auto;
 }
 
-@media (max-width: 1190px) {
+@media (max-width: 1300px) {
   .container {
-    padding: 0 16px;
+    padding: 0 15px;
   }
 }

@@ -1,8 +1,8 @@
 import Header from "./Header/Header";
-import HeaderUp from "./Header/HeaderUp/HeaderUp";
-import HeaderDown from "./Header/HeaderDown/HeaderDown";
+import FirstScreen from "./Home/FirstScreen/FirstScreen";
+import Portfolio from "./Home/Portfolio/Portfolio";
 import Footer from "./Footer/Footer";
 
 export {
-  Header, HeaderUp, HeaderDown, Footer, 
+  Header, FirstScreen, Portfolio, Footer, 
 }
