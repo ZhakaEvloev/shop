@@ -1,9 +1,27 @@
+import { useState } from "react";
 import { Container, Button } from "../../ui";
 import component from "./Header.module.scss";
 
 export default function Header() {
+
+  const [bgHeight, setBgHeight] = useState(false);
+
+  function scrollBar() {
+    let winscroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+    if(winscroll >= window.innerHeight) {
+      setBgHeight(true);
+    } else {
+      setBgHeight(false);
+    };
+  };
+  window.onscroll = scrollBar;
+
   return (
-    <header className={component.header}>
+    <header 
+      className={component.header} 
+      style={{background: bgHeight ? "#FFF" : "rgba(255, 255, 255, 0.3)"}}
+    >
       <Container>
         <div className={component.header__content}>
           <div className={component.header__logo}>NN</div>
